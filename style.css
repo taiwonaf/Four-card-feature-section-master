@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Light-Gray);
+}
+
+/* Text styling */
+
+h1 {
+    font-size: 36px;
+    color: var(--Very-Dark-Blue);
+}
+
+p {
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+}
+
+.container {
+    max-width: 1440px;
+    padding: 90px 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    align-self: start;
+    flex-wrap: nowrap;
+}
+
+.heading {
+    text-align: center;
+    max-width: 510px;
+    margin-top: 160px;
+}
+
+.heading p {
+    margin-top: 30px;
+}
+
+.power--text {
+    font-weight: 200;
+}
+
+.card {
+    margin-top: 60px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+    box-shadow: 2px 14px 35px -18px rgba(84,158,242,0.53);
+    -webkit-box-shadow: 2px 14px 35px -18px rgba(84,158,242,0.53);
+    -moz-box-shadow: 2px 14px 35px -18px rgba(84,158,242,0.53);
+}
+
+.card h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card .icon {
+    align-self: flex-end;
+}
+
+#supervisor {
+    border-top: 4px solid var(--Cyan);
+    margin-right: 25px;
+}
+
+#team {
+    border-top: 4px solid var(--Red);
+    margin-bottom: 25px;
+}
+
+#karma {
+    border-top: 4px solid var(--Orange);
+}
+
+#calculator {
+    border-top: 4px solid var(--Blue);
+    margin-left: 25px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 1659px) {
+    .container{ padding: 90px 50px;}
+}
+
+@media (max-width: 1430px) {
+    body {
+        height: 1500px;
+    }
+
+    .container {
+        margin: 0px 30px 0px 30px;
+        padding: 0px 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .heading p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .cards {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card, .inner--card {
+        width: 100%;
+    }
+    #supervisor {
+        margin-right: 0px;
+    }
+
+    #calculator {
+        margin-left: 0px;
+    }
+
+    #karma {
+        margin-bottom: 0px;
+    }
+
+    #calculator {
+        margin-right: 0px;
+    }
+
+    .card {
+        padding: 20px;
+        width: 80vw;
+    }
+}
